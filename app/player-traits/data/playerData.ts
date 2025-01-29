@@ -17,6 +17,15 @@ export const offensivePlayersData = [
     oBpm: 8.4,
     oEpm: 5.9
   },
+  {
+    rank: 3,
+    name: "Luka Doncic",
+    oMasbos: 9.6,
+    oLebron: 4.1,
+    oDarko: 4.7,
+    oBpm: 5.6,
+    oEpm: 5.2
+  },
   // Add all 10 players...
 ];
 

@@ -100,4 +100,35 @@ export const offensiveReboundersData = [
     secondChance: 3.1
   },
   // Add more players...
+];
+
+export const playersUnder30Data = [
+  {
+    rank: 1,
+    name: "Luka Doncic",
+    age: 24,
+    ppg: 32.4,
+    masbos: 9.6,
+    winShares: 12.5,
+    vorp: 7.2
+  },
+  {
+    rank: 2,
+    name: "Jayson Tatum",
+    age: 25,
+    ppg: 30.1,
+    masbos: 9.4,
+    winShares: 11.8,
+    vorp: 6.9
+  },
+  {
+    rank: 3,
+    name: "Shai Gilgeous-Alexander",
+    age: 24,
+    ppg: 31.4,
+    masbos: 9.8,
+    winShares: 10.4,
+    vorp: 6.5
+  },
+  // Add more players...
 ]; 

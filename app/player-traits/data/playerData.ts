@@ -26,7 +26,16 @@ export const offensivePlayersData = [
     oBpm: 5.6,
     oEpm: 5.2
   },
-  // Add all 10 players...
+  {
+    rank: 4,
+    name: "Jalen Brunson",
+    oMasbos: 9.4,
+    oLebron: 3.9,
+    oDarko: 3.5,
+    oBpm: 5.0,
+    oEpm: 5.4
+  },
+  // ... add remaining players
 ];
 
 export const shootersData = [
@@ -69,4 +78,26 @@ export const playmakersData = [
     apgPercent: 35.7
   },
   // Add all 10 players...
+];
+
+export const offensiveReboundersData = [
+  {
+    rank: 1,
+    name: "Andre Drummond",
+    mp: 941,
+    orpg: 4.1,
+    orebPercent: 16.8,
+    putbacks: 1.2,
+    secondChance: 3.4
+  },
+  {
+    rank: 2,
+    name: "Steven Adams",
+    mp: 1083,
+    orpg: 3.8,
+    orebPercent: 15.2,
+    putbacks: 1.0,
+    secondChance: 3.1
+  },
+  // Add more players...
 ]; 

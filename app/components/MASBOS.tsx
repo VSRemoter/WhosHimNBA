@@ -1,18 +1,6 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Bar, BarChart, XAxis, YAxis, Tooltip, ResponsiveContainer, Line, ComposedChart } from "recharts"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
-
-const masbosData = [
-  { level: "Good Season", score: 10, color: "#FFD700" },
-  { level: "All-time Great", score: 20, color: "#FFA500" },
-  { level: "Amazing", score: 30, color: "#FF4500" },
-  { level: "GOAT Level", score: 40, color: "#FF0000" },
-]
-
-const lineData = [{ score: 0 }, { score: 15 }, { score: 30 }, { score: 45 }]
 
 export default function MASBOS() {
   return (
@@ -76,71 +64,6 @@ export default function MASBOS() {
           <li>Provides a single, easy-to-understand score for player impact</li>
           <li>Updates dynamically throughout the season</li>
         </motion.ul>
-
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-        >
-          <Card className="bg-black bg-opacity-50">
-            <CardHeader>
-              <CardTitle className="text-3xl font-bold text-[#e94560]">MASBOS Score Interpretation</CardTitle>
-              <CardDescription className="text-xl text-gray-300">
-                Understanding the impact of MASBOS Scores
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ChartContainer
-                config={{
-                  score: {
-                    label: "MASBOS Score",
-                    color: "#e94560",
-                  },
-                }}
-                className="h-[400px]"
-              >
-                <ResponsiveContainer width="100%" height="100%">
-                  <ComposedChart data={masbosData}>
-                    <XAxis
-                      dataKey="level"
-                      type="category"
-                      tick={{ fill: "#e94560" }}
-                      axisLine={{ stroke: "#e94560" }}
-                    />
-                    <YAxis type="number" domain={[0, 50]} tick={{ fill: "#e94560" }} axisLine={{ stroke: "#e94560" }} />
-                    <Tooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="score" fill="url(#colorGradient)">
-                      {masbosData.map((entry, index) => (
-                        <motion.rect
-                          key={`bar-${index}`}
-                          initial={{ width: 0 }}
-                          animate={{ width: entry.score * 10 }}
-                          transition={{ duration: 1, delay: index * 0.1 }}
-                        />
-                      ))}
-                    </Bar>
-                    <Line
-                      data={lineData}
-                      type="monotone"
-                      dataKey="score"
-                      stroke="#e94560"
-                      strokeWidth={2}
-                      dot={{ fill: "#e94560", r: 4 }}
-                    />
-                    <defs>
-                      <linearGradient id="colorGradient" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stopColor="#e94560" />
-                        <stop offset="33%" stopColor="#e94560" />
-                        <stop offset="66%" stopColor="#e94560" />
-                        <stop offset="100%" stopColor="#e94560" />
-                      </linearGradient>
-                    </defs>
-                  </ComposedChart>
-                </ResponsiveContainer>
-              </ChartContainer>
-            </CardContent>
-          </Card>
-        </motion.div>
 
         <motion.div
           className="mt-8 text-xl text-gray-300"

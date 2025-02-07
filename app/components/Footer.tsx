@@ -53,7 +53,12 @@ export default function Footer() {
         <div>
           <h4 className="text-2xl font-semibold mb-6 text-secondary">Connect With Me</h4>
           <div>
-            <a href="#" className="text-4xl hover:text-secondary transition duration-300">
+            <a 
+              href="https://www.linkedin.com/in/shantbolat" 
+              className="text-4xl hover:text-secondary transition duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Linkedin />
             </a>
           </div>

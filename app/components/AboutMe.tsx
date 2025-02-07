@@ -51,10 +51,6 @@ export default function AboutMe() {
               definitely needs more competition, and I hope to bring some to the table. 
             </p>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>Bachelor of Science in Quantitative Finance</li>
-              <li>Bachelor of Science in Quantitative Finance</li>
-              <li>Published author on advanced basketball statistics</li>
-              <li>Regular contributor to major sports networks</li>
             </ul>
           </motion.div>
         </div>

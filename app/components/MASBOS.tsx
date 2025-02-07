@@ -74,16 +74,16 @@ export default function MASBOS() {
           <p className="mb-4">When looking at MASBOS, the score is interpreted as follows:</p>
           <ul className="list-disc list-inside space-y-2">
             <li>
-              10.0+ is considered a good season (a player who overall contributes to winning and is a positive asset)
+              A MASBOS of4.0+ is considered a good player (a player who overall contributes to winning and is a positive asset, or Teams with a Positive Win Record)
             </li>
             <li>
-              20.0+ is considered an All-Star level player (think Zion Williamson, a player who has a great impact on a
-              team on the winning side)
+              A MASBOS of6.0+ is considered an All-Star level player (think Zion Williamson, a player who has a great impact on a
+              team on the winning side, or Dark Horse NBA Teams)
             </li>
             <li>
-              30.0+ is considered Amazing (think MVP-level, your Shai Gilgeous-Alexander, Giannis Antetekoumpo etc)
+              A MASBOS of 9.0+ is considered Amazing (near MVP-level, 2nd seeds, etc)
             </li>
-            <li>40.0+ is considered GOAT Level (Think Jordan, LeBron etc)</li>
+            <li>A MASBSOS of 10.0 indicates a High Likelihood of Finishing on Top (Whether it be MVP, the best team, etc)</li>
           </ul>
         </motion.div>
       </div>

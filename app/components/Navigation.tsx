@@ -1,6 +1,4 @@
 "use client"
-
-import Link from "next/link"
 import { usePathname } from "next/navigation"
 
 const tabs = [
@@ -19,19 +17,16 @@ export default function Navigation() {
     <nav className="bg-primary p-8">
       <ul className="flex justify-center space-x-6">
         {tabs.map((tab) => (
-          <li key={tab.id}>
-            <Link
-              href={tab.href}
-              className={`px-8 py-4 rounded-full transition-colors duration-300 text-2xl font-semibold ${
-                pathname === tab.href ? "bg-secondary text-white" : "text-white hover:bg-accent"
-              }`}
-            >
-              {tab.label}
-            </Link>
+          <li
+            key={tab.id}
+            className={`px-8 py-4 rounded-full transition-colors duration-300 text-2xl font-semibold ${
+              pathname === tab.href ? "bg-secondary text-white" : "text-white hover:bg-accent"
+            }`}
+          >
+            {tab.label}
           </li>
         ))}
       </ul>
     </nav>
   )
 }
-

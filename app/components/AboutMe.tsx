@@ -23,7 +23,7 @@ export default function AboutMe() {
             transition={{ duration: 0.8 }}
           >
             <Image
-              src="/placeholder.svg?height=200&width=200"
+              src="/LinkedIn Photo.jpg"
               alt="Profile Picture"
               width={200}
               height={200}
@@ -36,14 +36,23 @@ export default function AboutMe() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-semibold mb-4 text-[#e94560]">John Doe</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-[#e94560]">Shant Bolat</h3>
             <p className="text-gray-300 mb-4">
-              I'm a passionate basketball analyst and the creator of MASBOS. With over 10 years of experience in sports
-              analytics, I've developed a deep understanding of the game and its underlying statistics.
+              I started WhosHim NBA, as a fun side project, trying to see if I could build 
+              a NBA Statistics dashboard, with a modern, sleek build. I'm a big fan of the NBA,
+              and I love to watch and analyze the games. I'm also a big fan of
+              numbers, building things. As a stat nerd, my favorite player in 
+              the league is Nikola Jokic, and LeBron James, and my favorite team is the 
+              New York Knicks. 
+
+              Building, and developing this website was a fun, challenging expierence. 
+              I'm almost certain, I will comeback to this project, and add more features, 
+              expand and hopefully bring some competition. The NBA Statistics niche
+              definitely needs more competition, and I hope to bring some to the table. 
             </p>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
-              <li>Former college basketball player</li>
-              <li>Master's degree in Sports Analytics</li>
+              <li>Bachelor of Science in Quantitative Finance</li>
+              <li>Bachelor of Science in Quantitative Finance</li>
               <li>Published author on advanced basketball statistics</li>
               <li>Regular contributor to major sports networks</li>
             </ul>
